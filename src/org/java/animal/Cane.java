@@ -30,9 +30,6 @@ public class Cane extends Animale {
         super.setSpecie(specie);
     }
 
-    public void setAlimento(String alimento) {
-        this.alimento = alimento;
-    }
 
     //METHODS
     @Override
@@ -42,11 +39,11 @@ public class Cane extends Animale {
 
     @Override
     public void verso() {
-        System.out.println("woof woof");
+        System.out.println("verso: woof woof");
     }
 
     @Override
     public void mangia() {
-        System.out.println(getAlimento()); //alimento ?
+        System.out.println("mangia: " + getAlimento());
     }
 }

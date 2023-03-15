@@ -1,6 +1,6 @@
 package org.java.animal;
 
-public class Passerotto extends Animale{
+public class Passerotto extends Animale implements Volante{
     //ATTRIBUTES
     private String alimento;
 
@@ -27,10 +27,6 @@ public class Passerotto extends Animale{
         super.setSpecie(specie);
     }
 
-    public void setAlimento(String alimento) {
-        this.alimento = alimento;
-    }
-
     //METHODS
     @Override
     public void dormi() {
@@ -44,7 +40,7 @@ public class Passerotto extends Animale{
 
     @Override
     public void mangia() {
-        System.out.println(getAlimento());
-
+        System.out.println("mangia: " + getAlimento());
     }
+
 }
