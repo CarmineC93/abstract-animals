@@ -3,26 +3,26 @@ package org.java.animal;
 public abstract class Animale {
 
     //ATTRIBUTES
-    private String nome;
+    private String specie;
 
     //CONSTRUCTORS
-    public Animale(String nome) {
-        this.nome = nome;
+    public Animale(String specie) {
+        this.specie = specie;
     }
 
     //GETTER & SETTER
-    public String getNome() {
-        return nome;
+    public String getSpecie() {
+        return specie;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setSpecie(String specie) {
+        this.specie = specie;
     }
 
 
     //METHODS
     public abstract void dormi();
     public abstract void verso();
-    public abstract void mangia (String alimento);
+    public abstract void mangia();
 
 
 }

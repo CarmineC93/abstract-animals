@@ -7,8 +7,8 @@ public class Cane extends Animale {
 
     //CONSTRUCTORS
 
-    public Cane (String nome){
-        super(nome);
+    public Cane (String specie){
+        super(specie);
         this.alimento = alimento;
         alimento = "carne";
     }
@@ -17,8 +17,8 @@ public class Cane extends Animale {
 
 
     @Override
-    public String getNome() {
-        return super.getNome();
+    public String getSpecie() {
+        return super.getSpecie();
     }
 
     public String getAlimento() {
@@ -26,8 +26,8 @@ public class Cane extends Animale {
     }
 
     @Override
-    public void setNome(String nome) {
-        super.setNome(nome);
+    public void setSpecie(String specie) {
+        super.setSpecie(specie);
     }
 
     public void setAlimento(String alimento) {
@@ -46,7 +46,7 @@ public class Cane extends Animale {
     }
 
     @Override
-    public void mangia(String alimento) {
+    public void mangia() {
         System.out.println(getAlimento()); //alimento ?
     }
 }

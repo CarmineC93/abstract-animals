@@ -5,13 +5,12 @@ public class Aquila extends Animale{
     private String alimento;
 
     //CONSTRUCTORS
-    public Aquila(String nome) {
-        super(nome);
+    public Aquila(String specie) {
+        super(specie);
+        this.alimento = "topi";
     }
 
     //GETTER & SETTER
-
-
     public String getAlimento() {
         return alimento;
     }
@@ -21,13 +20,13 @@ public class Aquila extends Animale{
     }
 
     @Override
-    public String getNome() {
-        return super.getNome();
+    public String getSpecie() {
+        return super.getSpecie();
     }
 
     @Override
-    public void setNome(String nome) {
-        super.setNome(nome);
+    public void setSpecie(String specie) {
+        super.setSpecie(specie);
     }
 
     //METHODS
@@ -43,7 +42,7 @@ public class Aquila extends Animale{
     }
 
     @Override
-    public void mangia(String alimento) {
+    public void mangia() {
         System.out.println("zzz");
 
     }

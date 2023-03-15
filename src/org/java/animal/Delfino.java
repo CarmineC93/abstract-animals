@@ -5,20 +5,20 @@ public class Delfino extends Animale{
     private String alimento;
 
     //CONTRUCTORS
-    public Delfino(String nome) {
-        super(nome);
+    public Delfino(String specie) {
+        super(specie);
         this.alimento = "pesciolini";
     }
 
     //GETTER & SETTER
     @Override
-    public String getNome() {
-        return super.getNome();
+    public String getSpecie() {
+        return super.getSpecie();
     }
 
     @Override
-    public void setNome(String nome) {
-        super.setNome(nome);
+    public void setSpecie(String specie) {
+        super.setSpecie(specie);
     }
 
     public String getAlimento() {
@@ -41,7 +41,7 @@ public class Delfino extends Animale{
     }
 
     @Override
-    public void mangia(String alimento) {
+    public void mangia() {
         System.out.println(getAlimento());
 
     }

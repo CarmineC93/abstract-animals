@@ -5,8 +5,8 @@ public class Passerotto extends Animale{
     private String alimento;
 
     //CONSTRUCTORS
-    public Passerotto(String nome) {
-        super(nome);
+    public Passerotto(String specie) {
+        super(specie);
         this.alimento = "insetti" ;
     }
 
@@ -14,8 +14,8 @@ public class Passerotto extends Animale{
 
 
     @Override
-    public String getNome() {
-        return super.getNome();
+    public String getSpecie() {
+        return super.getSpecie();
     }
 
     public String getAlimento() {
@@ -23,8 +23,8 @@ public class Passerotto extends Animale{
     }
 
     @Override
-    public void setNome(String nome) {
-        super.setNome(nome);
+    public void setSpecie(String specie) {
+        super.setSpecie(specie);
     }
 
     public void setAlimento(String alimento) {
@@ -43,7 +43,7 @@ public class Passerotto extends Animale{
     }
 
     @Override
-    public void mangia(String alimento) {
+    public void mangia() {
         System.out.println(getAlimento());
 
     }
