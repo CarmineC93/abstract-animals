@@ -42,4 +42,6 @@ public class Aquila extends Animale implements Volante{
     public void mangia() {
         System.out.println("mangia: " + getAlimento());
     }
+
+
 }
