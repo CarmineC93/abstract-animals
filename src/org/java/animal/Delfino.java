@@ -42,4 +42,7 @@ public class Delfino extends Animale implements Nuotante{
         System.out.println("mangia: " + getAlimento());
     }
 
+    public void nuota(){
+        System.out.println("sto nuotando");
+    };
 }

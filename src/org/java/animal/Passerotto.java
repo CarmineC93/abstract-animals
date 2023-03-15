@@ -43,4 +43,8 @@ public class Passerotto extends Animale implements Volante{
         System.out.println("mangia: " + getAlimento());
     }
 
+    @Override
+    public void vola() {
+        System.out.println("sto volando jack");
+    }
 }

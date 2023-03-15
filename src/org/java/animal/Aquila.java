@@ -35,7 +35,6 @@ public class Aquila extends Animale implements Volante{
     @Override
     public void verso() {
         System.out.println("iiiiii");
-
     }
 
     @Override
@@ -43,5 +42,9 @@ public class Aquila extends Animale implements Volante{
         System.out.println("mangia: " + getAlimento());
     }
 
+    @Override
+    public void vola() {
+        System.out.println("sto volando jack");
+    }
 
 }
